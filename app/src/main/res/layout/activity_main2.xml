@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context=".Main2Activity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:freezesText="true"
+        android:hint="Person Name"
+        android:inputType="textCapSentences" />
+
+    <EditText
+        android:id="@+id/age_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:freezesText="true"
+        android:hint="Age"
+        android:inputType="number" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/glasses_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wear Glasses" />
+
+    <EditText
+        android:id="@+id/info_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:freezesText="true"
+        android:hint="More information"
+        android:inputType="textCapSentences" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="submitStudent"
+        android:text="SUBMIT" />
+</LinearLayout>
